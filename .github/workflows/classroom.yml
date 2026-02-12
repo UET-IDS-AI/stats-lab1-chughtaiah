@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Q1a
-        setup-command: ''
+        setup-command: pip install numpy matplotlib pytest
         command: pytest test_stats_lab.py::test_q1_normal
         timeout: 10
         max-score: 10
@@ -27,7 +27,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Q1b
-        setup-command: ''
+        setup-command: pip install numpy matplotlib pytest
         command: pytest test_stats_lab.py::test_q1_uniform
         timeout: 10
         max-score: 10
@@ -36,7 +36,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Q1c
-        setup-command: ''
+        setup-command: pip install numpy matplotlib pytest
         command: pytest test_stats_lab.py::test_q1_bernoulli
         timeout: 10
         max-score: 10
@@ -45,8 +45,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Q2a
-        setup-command: ''
-        command: pytest test_stats_lab.py::test_q2_variance
+        setup-command: pip install numpy matplotlib pytest
+        command: pytest test_stats_lab.py::test_q2_mean
         timeout: 10
         max-score: 10
     - name: Q3
@@ -54,7 +54,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Q3
-        setup-command: ''
+        setup-command: pip install numpy matplotlib pytest
         command: pytest test_stats_lab.py::test_q3_order_statistics
         timeout: 10
         max-score: 20
@@ -63,7 +63,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Q4
-        setup-command: ''
+        setup-command: pip install numpy matplotlib pytest
         command: pytest test_stats_lab.py::test_q5_covariance_matrix
         timeout: 10
         max-score: 15
@@ -72,7 +72,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Q5
-        setup-command: ''
+        setup-command: pip install numpy matplotlib pytest
         command: pytest test_stats_lab.py::test_q5_covariance_matrix
         timeout: 10
         max-score: 15
@@ -81,8 +81,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Q2b
-        setup-command: ''
-        command: pytest test_stats_lab.py::test_q2_mean
+        setup-command: pip install numpy matplotlib pytest
+        command: pytest test_stats_lab.py::test_q2_variance
         timeout: 10
         max-score: 10
     - name: Autograding Reporter
